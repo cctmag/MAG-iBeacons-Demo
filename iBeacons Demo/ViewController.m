@@ -94,34 +94,43 @@
     NSLog(@"%d old 1",old);
     UIStoryboard *storyboard;
     
-    if ([[UIDevice currentDevice] userInterfaceIdiom] ==UIUserInterfaceIdiomPad) {
-        storyboard = [UIStoryboard storyboardWithName:@"Main-iPad" bundle:nil];
-    } else {
-        storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    NSString *str_newbeacon = [@(new) description];
+    
+    NSDictionary *dictBeacon = @{
+                                @"45893": @"BeaconOneViewController",
+                                @"19546": @"BeaconTwoViewController",
+                                @"33127": @"BeaconHighlightVC-EMDM",
+                                };
+    
+    NSString *storyboardName;
+    
+    switch( UI_USER_INTERFACE_IDIOM()) {
+        case UIUserInterfaceIdiomPad:
+            storyboardName = @"Main-iPad";
+            break;
+        case UIUserInterfaceIdiomPhone:
+            storyboardName = @"Main";
+            break;
+        default:
+            NSLog(@"UI_USER_INTERFACE_IDIOM not supported");
+            break;
     }
+    
+    storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     
     [_viewController setModalPresentationStyle:UIModalPresentationFullScreen];
     
-    if (new == 45893) {
-        _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconOneViewController"];
-        [self presentViewController:_viewController animated:YES completion:nil];
-        NSLog(@"segue to one");
-        NSLog(@"%d old nested",old);
+    NSString *vc_beacon_id = [dictBeacon valueForKey:str_newbeacon];
+    
+    if( nil == vc_beacon_id ){
+        NSLog(@"No key found for beacon ID: %@", str_newbeacon);
     }
     
-    if (new == 19546) {
-        _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconTwoViewController"];
-        [self presentViewController:_viewController animated:YES completion:nil];
-        NSLog(@"segue to two");
-        NSLog(@"%d old nested",old);
-    }
+    _viewController = [storyboard instantiateViewControllerWithIdentifier:vc_beacon_id];
+    [self presentViewController:_viewController animated:YES completion:nil];
     
-    if (new == 33127) {
-        _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-EMDM"];
-        [self presentViewController:_viewController animated:YES completion:nil];
-        NSLog(@"segue to Beacon");
-        NSLog(@"%d old nested",old);
-    }
+    NSLog(@"segue to %@", vc_beacon_id);
+    NSLog(@"%d old nested",old);
     
     NSLog(@"%d old 2",old);
 }
