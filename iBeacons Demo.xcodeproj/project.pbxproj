@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		377287B518DCF07F00508407 /* BeaconHighlightVC-EMDM.m in Sources */ = {isa = PBXBuildFile; fileRef = 377287B418DCF07F00508407 /* BeaconHighlightVC-EMDM.m */; };
+		377287BC18DCF56400508407 /* EMDM-SocialStructure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 377287B818DCF56400508407 /* EMDM-SocialStructure.jpg */; };
+		377287BD18DCF56400508407 /* EMDM-Hemisphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 377287B918DCF56400508407 /* EMDM-Hemisphere.jpg */; };
+		377287BE18DCF56400508407 /* EMDM-Performance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 377287BA18DCF56400508407 /* EMDM-Performance.jpg */; };
+		377287BF18DCF56400508407 /* EMDM-LOL.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 377287BB18DCF56400508407 /* EMDM-LOL.JPG */; };
+		377287C018DCF87500508407 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F5C66C18DCE68C00AC00A9 /* Main-iPad.storyboard */; };
+		377287C318DCFB5800508407 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377287C218DCFB5800508407 /* Main.storyboard */; };
 		63C6BF2118D3BF3A00827D37 /* BeaconOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6BF2018D3BF3A00827D37 /* BeaconOneViewController.m */; };
 		63C6BF2418D3BF4B00827D37 /* BeaconTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6BF2318D3BF4B00827D37 /* BeaconTwoViewController.m */; };
-		63F5C66D18DCE68C00AC00A9 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F5C66C18DCE68C00AC00A9 /* Main-iPad.storyboard */; };
 		63F5C67018DCE9C100AC00A9 /* BeaconHighlightVC-Li.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F5C66F18DCE9C100AC00A9 /* BeaconHighlightVC-Li.m */; };
 		C9AF590017F5678D00792F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF58FF17F5678D00792F91 /* Foundation.framework */; };
 		C9AF590217F5678D00792F91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF590117F5678D00792F91 /* CoreGraphics.framework */; };
@@ -17,7 +23,6 @@
 		C9AF590A17F5678D00792F91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9AF590817F5678D00792F91 /* InfoPlist.strings */; };
 		C9AF590C17F5678D00792F91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AF590B17F5678D00792F91 /* main.m */; };
 		C9AF591017F5678D00792F91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AF590F17F5678D00792F91 /* AppDelegate.m */; };
-		C9AF591317F5678D00792F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9AF591117F5678D00792F91 /* Main.storyboard */; };
 		C9AF591617F5678D00792F91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AF591517F5678D00792F91 /* ViewController.m */; };
 		C9AF591817F5678D00792F91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9AF591717F5678D00792F91 /* Images.xcassets */; };
 		C9AF591F17F5678D00792F91 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF591E17F5678D00792F91 /* XCTest.framework */; };
@@ -40,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		377287B318DCF07F00508407 /* BeaconHighlightVC-EMDM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BeaconHighlightVC-EMDM.h"; sourceTree = "<group>"; };
+		377287B418DCF07F00508407 /* BeaconHighlightVC-EMDM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BeaconHighlightVC-EMDM.m"; sourceTree = "<group>"; };
+		377287B818DCF56400508407 /* EMDM-SocialStructure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-SocialStructure.jpg"; sourceTree = "<group>"; };
+		377287B918DCF56400508407 /* EMDM-Hemisphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-Hemisphere.jpg"; sourceTree = "<group>"; };
+		377287BA18DCF56400508407 /* EMDM-Performance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-Performance.jpg"; sourceTree = "<group>"; };
+		377287BB18DCF56400508407 /* EMDM-LOL.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-LOL.JPG"; sourceTree = "<group>"; };
+		377287C218DCFB5800508407 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		63C6BF1F18D3BF3A00827D37 /* BeaconOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconOneViewController.h; sourceTree = "<group>"; };
 		63C6BF2018D3BF3A00827D37 /* BeaconOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconOneViewController.m; sourceTree = "<group>"; };
 		63C6BF2218D3BF4B00827D37 /* BeaconTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconTwoViewController.h; sourceTree = "<group>"; };
@@ -57,7 +69,6 @@
 		C9AF590D17F5678D00792F91 /* iBeacons Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBeacons Demo-Prefix.pch"; sourceTree = "<group>"; };
 		C9AF590E17F5678D00792F91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C9AF590F17F5678D00792F91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C9AF591217F5678D00792F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9AF591417F5678D00792F91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C9AF591517F5678D00792F91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C9AF591717F5678D00792F91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -96,6 +107,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		377287B718DCF54E00508407 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				377287B818DCF56400508407 /* EMDM-SocialStructure.jpg */,
+				377287B918DCF56400508407 /* EMDM-Hemisphere.jpg */,
+				377287BA18DCF56400508407 /* EMDM-Performance.jpg */,
+				377287BB18DCF56400508407 /* EMDM-LOL.JPG */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		C9AF58F317F5678D00792F91 = {
 			isa = PBXGroup;
 			children = (
@@ -132,10 +154,13 @@
 		C9AF590517F5678D00792F91 /* iBeacons Demo */ = {
 			isa = PBXGroup;
 			children = (
+				377287B718DCF54E00508407 /* Media */,
 				C9AF590E17F5678D00792F91 /* AppDelegate.h */,
 				C9AF590F17F5678D00792F91 /* AppDelegate.m */,
-				C9AF591117F5678D00792F91 /* Main.storyboard */,
+				377287C218DCFB5800508407 /* Main.storyboard */,
 				63F5C66C18DCE68C00AC00A9 /* Main-iPad.storyboard */,
+				377287B318DCF07F00508407 /* BeaconHighlightVC-EMDM.h */,
+				377287B418DCF07F00508407 /* BeaconHighlightVC-EMDM.m */,
 				C9AF591417F5678D00792F91 /* ViewController.h */,
 				C9AF591517F5678D00792F91 /* ViewController.m */,
 				63C6BF1F18D3BF3A00827D37 /* BeaconOneViewController.h */,
@@ -255,10 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377287C018DCF87500508407 /* Main-iPad.storyboard in Resources */,
 				C9AF591817F5678D00792F91 /* Images.xcassets in Resources */,
 				C9AF590A17F5678D00792F91 /* InfoPlist.strings in Resources */,
-				C9AF591317F5678D00792F91 /* Main.storyboard in Resources */,
-				63F5C66D18DCE68C00AC00A9 /* Main-iPad.storyboard in Resources */,
+				377287C318DCFB5800508407 /* Main.storyboard in Resources */,
+				377287BF18DCF56400508407 /* EMDM-LOL.JPG in Resources */,
+				377287BC18DCF56400508407 /* EMDM-SocialStructure.jpg in Resources */,
+				377287BD18DCF56400508407 /* EMDM-Hemisphere.jpg in Resources */,
+				377287BE18DCF56400508407 /* EMDM-Performance.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +310,7 @@
 				63C6BF2118D3BF3A00827D37 /* BeaconOneViewController.m in Sources */,
 				63C6BF2418D3BF4B00827D37 /* BeaconTwoViewController.m in Sources */,
 				C9AF591017F5678D00792F91 /* AppDelegate.m in Sources */,
+				377287B518DCF07F00508407 /* BeaconHighlightVC-EMDM.m in Sources */,
 				63F5C67018DCE9C100AC00A9 /* BeaconHighlightVC-Li.m in Sources */,
 				C9AF590C17F5678D00792F91 /* main.m in Sources */,
 			);
@@ -311,14 +341,6 @@
 				C9AF590917F5678D00792F91 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C9AF591117F5678D00792F91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9AF591217F5678D00792F91 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		C9AF592717F5678D00792F91 /* InfoPlist.strings */ = {

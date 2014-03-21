@@ -92,8 +92,14 @@
     NSLog(@"which Beacon");
     
     NSLog(@"%d old 1",old);
+    UIStoryboard *storyboard;
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] ==UIUserInterfaceIdiomPad) {
+        storyboard = [UIStoryboard storyboardWithName:@"Main-iPad" bundle:nil];
+    } else {
+        storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    }
+    
     [_viewController setModalPresentationStyle:UIModalPresentationFullScreen];
     
     if (new == 45893) {
@@ -107,6 +113,13 @@
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconTwoViewController"];
         [self presentViewController:_viewController animated:YES completion:nil];
         NSLog(@"segue to two");
+        NSLog(@"%d old nested",old);
+    }
+    
+    if (new == 33127) {
+        _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-EMDM"];
+        [self presentViewController:_viewController animated:YES completion:nil];
+        NSLog(@"segue to Beacon");
         NSLog(@"%d old nested",old);
     }
     
