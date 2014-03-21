@@ -64,7 +64,7 @@
                         <outlet property="majorLabel" destination="KjI-c4-wDe" id="rLs-Zr-Z6w"/>
                         <segue destination="wbw-LW-4zS" kind="modal" identifier="toBeaconOne" id="dg5-Lo-tTB"/>
                         <segue destination="dkH-pt-XEJ" kind="modal" identifier="toBeaconTwo" id="4cl-41-bs9"/>
-                        <segue destination="TNh-fD-w0C" kind="modal" id="bWT-d5-1i6"/>
+                        <segue destination="TNh-fD-w0C" kind="modal" identifier="toLi" id="bWT-d5-1i6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
