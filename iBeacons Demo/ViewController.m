@@ -106,7 +106,7 @@
     if (new == 19546) {
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconTwoViewController"];
         [self presentViewController:_viewController animated:YES completion:nil];
-         NSLog(@"segue to two");
+        NSLog(@"segue to two");
         NSLog(@"%d old nested",old);
     }
     

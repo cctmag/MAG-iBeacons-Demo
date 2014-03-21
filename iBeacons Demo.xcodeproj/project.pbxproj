@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		63C6BF2118D3BF3A00827D37 /* BeaconOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6BF2018D3BF3A00827D37 /* BeaconOneViewController.m */; };
 		63C6BF2418D3BF4B00827D37 /* BeaconTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C6BF2318D3BF4B00827D37 /* BeaconTwoViewController.m */; };
+		63F5C66D18DCE68C00AC00A9 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F5C66C18DCE68C00AC00A9 /* Main-iPad.storyboard */; };
+		63F5C67018DCE9C100AC00A9 /* BeaconHighlightVC-Li.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F5C66F18DCE9C100AC00A9 /* BeaconHighlightVC-Li.m */; };
 		C9AF590017F5678D00792F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF58FF17F5678D00792F91 /* Foundation.framework */; };
 		C9AF590217F5678D00792F91 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF590117F5678D00792F91 /* CoreGraphics.framework */; };
 		C9AF590417F5678D00792F91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AF590317F5678D00792F91 /* UIKit.framework */; };
@@ -42,6 +44,9 @@
 		63C6BF2018D3BF3A00827D37 /* BeaconOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconOneViewController.m; sourceTree = "<group>"; };
 		63C6BF2218D3BF4B00827D37 /* BeaconTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconTwoViewController.h; sourceTree = "<group>"; };
 		63C6BF2318D3BF4B00827D37 /* BeaconTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconTwoViewController.m; sourceTree = "<group>"; };
+		63F5C66C18DCE68C00AC00A9 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Main-iPad.storyboard"; path = "../Main-iPad.storyboard"; sourceTree = "<group>"; };
+		63F5C66E18DCE9C100AC00A9 /* BeaconHighlightVC-Li.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BeaconHighlightVC-Li.h"; sourceTree = "<group>"; };
+		63F5C66F18DCE9C100AC00A9 /* BeaconHighlightVC-Li.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BeaconHighlightVC-Li.m"; sourceTree = "<group>"; };
 		C9AF58FC17F5678D00792F91 /* iBeacons Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iBeacons Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AF58FF17F5678D00792F91 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9AF590117F5678D00792F91 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,12 +135,15 @@
 				C9AF590E17F5678D00792F91 /* AppDelegate.h */,
 				C9AF590F17F5678D00792F91 /* AppDelegate.m */,
 				C9AF591117F5678D00792F91 /* Main.storyboard */,
+				63F5C66C18DCE68C00AC00A9 /* Main-iPad.storyboard */,
 				C9AF591417F5678D00792F91 /* ViewController.h */,
 				C9AF591517F5678D00792F91 /* ViewController.m */,
 				63C6BF1F18D3BF3A00827D37 /* BeaconOneViewController.h */,
 				63C6BF2018D3BF3A00827D37 /* BeaconOneViewController.m */,
 				63C6BF2218D3BF4B00827D37 /* BeaconTwoViewController.h */,
 				63C6BF2318D3BF4B00827D37 /* BeaconTwoViewController.m */,
+				63F5C66E18DCE9C100AC00A9 /* BeaconHighlightVC-Li.h */,
+				63F5C66F18DCE9C100AC00A9 /* BeaconHighlightVC-Li.m */,
 			);
 			path = "iBeacons Demo";
 			sourceTree = "<group>";
@@ -250,6 +258,7 @@
 				C9AF591817F5678D00792F91 /* Images.xcassets in Resources */,
 				C9AF590A17F5678D00792F91 /* InfoPlist.strings in Resources */,
 				C9AF591317F5678D00792F91 /* Main.storyboard in Resources */,
+				63F5C66D18DCE68C00AC00A9 /* Main-iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +281,7 @@
 				63C6BF2118D3BF3A00827D37 /* BeaconOneViewController.m in Sources */,
 				63C6BF2418D3BF4B00827D37 /* BeaconTwoViewController.m in Sources */,
 				C9AF591017F5678D00792F91 /* AppDelegate.m in Sources */,
+				63F5C67018DCE9C100AC00A9 /* BeaconHighlightVC-Li.m in Sources */,
 				C9AF590C17F5678D00792F91 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,7 +415,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeacons Demo/iBeacons Demo-Prefix.pch";
 				INFOPLIST_FILE = "iBeacons Demo/iBeacons Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -419,7 +431,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iBeacons Demo/iBeacons Demo-Prefix.pch";
 				INFOPLIST_FILE = "iBeacons Demo/iBeacons Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

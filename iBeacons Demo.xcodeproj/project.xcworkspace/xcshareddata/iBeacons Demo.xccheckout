@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E365581F-BD48-4AE0-BED6-875598DEF04E</string>
+	<string>0CBB5723-F51A-4CA5-A1D7-C4E85D1C1E13</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iBeacons Demo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C1C7200B-5C02-4FF8-84A2-A7E01FAFDB6C</key>
-		<string>https://github.com/dsholmes/iBeacons-Demo.git</string>
+		<key>D0B2D9FA-0473-4ABE-B2E3-78582DCAA54C</key>
+		<string>https://github.com/cctmag/MAG-iBeacons-Demo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iBeacons Demo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C1C7200B-5C02-4FF8-84A2-A7E01FAFDB6C</key>
+		<key>D0B2D9FA-0473-4ABE-B2E3-78582DCAA54C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/dsholmes/iBeacons-Demo.git</string>
+	<string>https://github.com/cctmag/MAG-iBeacons-Demo.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C1C7200B-5C02-4FF8-84A2-A7E01FAFDB6C</string>
+	<string>D0B2D9FA-0473-4ABE-B2E3-78582DCAA54C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C1C7200B-5C02-4FF8-84A2-A7E01FAFDB6C</string>
+			<string>D0B2D9FA-0473-4ABE-B2E3-78582DCAA54C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>iBeacons Demo</string>
+			<string>MAG-iBeacons-Demo</string>
 		</dict>
 	</array>
 </dict>
