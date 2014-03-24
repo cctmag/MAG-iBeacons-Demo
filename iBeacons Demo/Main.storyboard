@@ -56,6 +56,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQN-MB-PJ1">
+                                <rect key="frame" x="137" y="420" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="to Li VC">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toLiVC:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yGe-j5-HcC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -71,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="1203" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Beacon HighlightVC Li-->
         <scene sceneID="8yv-p5-Mv5">
             <objects>
-                <viewController id="TNh-fD-w0C" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BeaconHighlightVC-Li" id="TNh-fD-w0C" customClass="BeaconHighlightVC_Li" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zVI-yA-scr"/>
                         <viewControllerLayoutGuide type="bottom" id="1Mw-a7-Fgz"/>
@@ -86,10 +96,22 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4B-ns-bms">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Real-time 3D Human Body Scanning, Measurement, and Posture Analysis using Kinects" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DX7-Qi-BIo">
+                                        <rect key="frame" x="0.0" y="20" width="320" height="86"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="V4B-ns-bms" id="kUL-2G-TSP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x27-bu-lmW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

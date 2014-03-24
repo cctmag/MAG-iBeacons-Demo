@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ChochinTextView.h"
+#import "ScaledImageView.h"
 
 @interface BeaconHighlightVC_Li : ViewController
 

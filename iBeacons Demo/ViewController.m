@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "BeaconOneViewController.h"
 #import "BeaconTwoViewController.h"
+#import "BeaconHighlightVC-Li.h"
 
 
 @interface ViewController ()
@@ -20,6 +21,14 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *majorLabel;
 @property (nonatomic) int oldBeaconMajor;
+
+
+///////////
+////// Temporary: for Testing
+
+- (IBAction)toLiVC:(id)sender;
+
+///////////
 
 @end
 
@@ -33,6 +42,13 @@
     self.locationManager.delegate = self;
     [self initRegion];
     [self locationManager:self.locationManager didStartMonitoringForRegion:self.beaconRegion];
+    
+//    for (NSString *familyName in [UIFont familyNames]) {
+//        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
+//            NSLog(@"%@", fontName);
+//        }
+//    }
+    
 }
 
 - (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
@@ -46,12 +62,12 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
-    NSLog(@"Beacon Found");
+    //NSLog(@"Beacon Found");
     [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
-    NSLog(@"Left Region");
+    //NSLog(@"Left Region");
     [self.locationManager stopRangingBeaconsInRegion:self.beaconRegion];
 }
 
@@ -59,15 +75,15 @@
     
     CLBeacon *beacon = [[CLBeacon alloc] init];
     beacon = [beacons firstObject]; //maybe lastObject?
-    NSLog(@"%@",beacons);
+    //NSLog(@"%@",beacons);
     
     int foundBeaconMajor = [beacon.major intValue];
-    NSLog(@"%d new",foundBeaconMajor);
-    NSLog(@"%d old",self.oldBeaconMajor);
+    //NSLog(@"%d new",foundBeaconMajor);
+    //NSLog(@"%d old",self.oldBeaconMajor);
     
     if (foundBeaconMajor == self.oldBeaconMajor) {
         
-        NSLog(@"same beacon");
+        //NSLog(@"same beacon");
         
     } else {
         
@@ -78,8 +94,8 @@
         
             self.oldBeaconMajor = foundBeaconMajor;
         
-            NSLog(@"%d new",foundBeaconMajor);
-            NSLog(@"%d old",self.oldBeaconMajor);
+            //NSLog(@"%d new",foundBeaconMajor);
+            //NSLog(@"%d old",self.oldBeaconMajor);
         
             [_viewController dismissViewControllerAnimated:YES completion:^{
                 [self whichBeacon:self.oldBeaconMajor new:foundBeaconMajor];
@@ -89,28 +105,28 @@
 }
 
 -(void)whichBeacon:(int)old new:(int)new {
-    NSLog(@"which Beacon");
+    //NSLog(@"which Beacon");
     
-    NSLog(@"%d old 1",old);
+    //NSLog(@"%d old 1",old);
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     [_viewController setModalPresentationStyle:UIModalPresentationFullScreen];
     
-    if (new == 45893) {
+    if (new == 10) {//45893
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconOneViewController"];
         [self presentViewController:_viewController animated:YES completion:nil];
-        NSLog(@"segue to one");
-        NSLog(@"%d old nested",old);
+        //NSLog(@"segue to one");
+        //NSLog(@"%d old nested",old);
     }
     
-    if (new == 19546) {
+    if (new == 20) {//19546
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconTwoViewController"];
         [self presentViewController:_viewController animated:YES completion:nil];
-        NSLog(@"segue to two");
-        NSLog(@"%d old nested",old);
+        //NSLog(@"segue to two");
+        //NSLog(@"%d old nested",old);
     }
     
-    NSLog(@"%d old 2",old);
+    //NSLog(@"%d old 2",old);
 }
 
 - (void)didReceiveMemoryWarning
@@ -118,4 +134,14 @@
     [super didReceiveMemoryWarning];
 }
 
+///////////
+////// Temporary: for Testing
+
+- (IBAction)toLiVC:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main-iPad" bundle:nil];
+    [_viewController setModalPresentationStyle:UIModalPresentationFullScreen];
+    _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-Li"];
+    [self presentViewController:_viewController animated:YES completion:nil];
+}
 @end
