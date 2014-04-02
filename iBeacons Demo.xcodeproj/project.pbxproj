@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371AA62E18EC837600CF6E42 /* EMDM-Hemisphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 371AA62A18EC837600CF6E42 /* EMDM-Hemisphere.jpg */; };
+		371AA62F18EC837600CF6E42 /* EMDM-LOL.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 371AA62B18EC837600CF6E42 /* EMDM-LOL.JPG */; };
+		371AA63018EC837600CF6E42 /* EMDM-Performance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 371AA62C18EC837600CF6E42 /* EMDM-Performance.jpg */; };
+		371AA63118EC837600CF6E42 /* EMDM-SocialStructure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 371AA62D18EC837600CF6E42 /* EMDM-SocialStructure.jpg */; };
+		371AA63418EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.m in Sources */ = {isa = PBXBuildFile; fileRef = 371AA63318EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.m */; };
 		63B1A8D518DCFBA8005BBF28 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B1A8D318DCFBA8005BBF28 /* Main-iPad.storyboard */; };
 		63B1A8D618DCFBA8005BBF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B1A8D418DCFBA8005BBF28 /* Main.storyboard */; };
 		63BC9BD718E0D20900E2A00F /* 3DScanAndPrint.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63BC9BD418E0D20900E2A00F /* 3DScanAndPrint.jpg */; };
@@ -47,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		371AA62A18EC837600CF6E42 /* EMDM-Hemisphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-Hemisphere.jpg"; sourceTree = "<group>"; };
+		371AA62B18EC837600CF6E42 /* EMDM-LOL.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-LOL.JPG"; sourceTree = "<group>"; };
+		371AA62C18EC837600CF6E42 /* EMDM-Performance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-Performance.jpg"; sourceTree = "<group>"; };
+		371AA62D18EC837600CF6E42 /* EMDM-SocialStructure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-SocialStructure.jpg"; sourceTree = "<group>"; };
+		371AA63218EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BeaconHighlightVC-EMDM.h"; sourceTree = "<group>"; };
+		371AA63318EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BeaconHighlightVC-EMDM.m"; sourceTree = "<group>"; };
 		63B1A8D318DCFBA8005BBF28 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
 		63B1A8D418DCFBA8005BBF28 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		63BC9BD418E0D20900E2A00F /* 3DScanAndPrint.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3DScanAndPrint.jpg; path = "Media/Li-Media/3DScanAndPrint.jpg"; sourceTree = "<group>"; };
@@ -112,6 +123,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371AA62918EC837600CF6E42 /* EMDM-Media */ = {
+			isa = PBXGroup;
+			children = (
+				371AA62A18EC837600CF6E42 /* EMDM-Hemisphere.jpg */,
+				371AA62B18EC837600CF6E42 /* EMDM-LOL.JPG */,
+				371AA62C18EC837600CF6E42 /* EMDM-Performance.jpg */,
+				371AA62D18EC837600CF6E42 /* EMDM-SocialStructure.jpg */,
+			);
+			name = "EMDM-Media";
+			path = "Media/EMDM-Media";
+			sourceTree = "<group>";
+		};
 		63F14A0D18E090F2005C9287 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +204,8 @@
 				63C6BF2018D3BF3A00827D37 /* BeaconOneViewController.m */,
 				63C6BF2218D3BF4B00827D37 /* BeaconTwoViewController.h */,
 				63C6BF2318D3BF4B00827D37 /* BeaconTwoViewController.m */,
+				371AA63218EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.h */,
+				371AA63318EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.m */,
 				63F5C66E18DCE9C100AC00A9 /* BeaconHighlightVC-Li.h */,
 				63F5C66F18DCE9C100AC00A9 /* BeaconHighlightVC-Li.m */,
 				63F14A0D18E090F2005C9287 /* Classes */,
@@ -191,6 +216,7 @@
 		C9AF590617F5678D00792F91 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				371AA62918EC837600CF6E42 /* EMDM-Media */,
 				63F5C67918DCF00A00AC00A9 /* Li-Media */,
 				C9AF591717F5678D00792F91 /* Images.xcassets */,
 				C9AF590717F5678D00792F91 /* iBeacons Demo-Info.plist */,
@@ -296,10 +322,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371AA62F18EC837600CF6E42 /* EMDM-LOL.JPG in Resources */,
 				C9AF591817F5678D00792F91 /* Images.xcassets in Resources */,
 				63BC9BD818E0D20900E2A00F /* FacialReconstruction.jpg in Resources */,
 				63B1A8D618DCFBA8005BBF28 /* Main.storyboard in Resources */,
 				63BC9BD718E0D20900E2A00F /* 3DScanAndPrint.jpg in Resources */,
+				371AA63118EC837600CF6E42 /* EMDM-SocialStructure.jpg in Resources */,
+				371AA63018EC837600CF6E42 /* EMDM-Performance.jpg in Resources */,
+				371AA62E18EC837600CF6E42 /* EMDM-Hemisphere.jpg in Resources */,
 				C9AF590A17F5678D00792F91 /* InfoPlist.strings in Resources */,
 				63F5C68018DCF0EC00AC00A9 /* 3DBody.png in Resources */,
 				63BC9BD918E0D20900E2A00F /* SkullModeling.png in Resources */,
@@ -329,6 +359,7 @@
 				C9AF591017F5678D00792F91 /* AppDelegate.m in Sources */,
 				63F5C67018DCE9C100AC00A9 /* BeaconHighlightVC-Li.m in Sources */,
 				C9AF590C17F5678D00792F91 /* main.m in Sources */,
+				371AA63418EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.m in Sources */,
 				63FBB9C718E0863E00AE3E5C /* ScaledImageView.m in Sources */,
 				63FBB9C418E0835C00AE3E5C /* ChochinTextView.m in Sources */,
 			);

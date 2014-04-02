@@ -42,7 +42,7 @@
     self.locationManager.delegate = self;
     [self initRegion];
     [self locationManager:self.locationManager didStartMonitoringForRegion:self.beaconRegion];
-    
+    NSLog(@"Loaded");
 //    for (NSString *familyName in [UIFont familyNames]) {
 //        for (NSString *fontName in [UIFont fontNamesForFamilyName:familyName]) {
 //            NSLog(@"%@", fontName);
@@ -62,7 +62,7 @@
 }
 
 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
-    //NSLog(@"Beacon Found");
+     NSLog(@"Beacon Found");
     [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
 }
 
@@ -75,10 +75,10 @@
     
     CLBeacon *beacon = [[CLBeacon alloc] init];
     beacon = [beacons firstObject]; //maybe lastObject?
-    //NSLog(@"%@",beacons);
+    NSLog(@"%@",beacons);
     
     int foundBeaconMajor = [beacon.major intValue];
-    //NSLog(@"%d new",foundBeaconMajor);
+    NSLog(@"%d new",foundBeaconMajor);
     //NSLog(@"%d old",self.oldBeaconMajor);
     
     if (foundBeaconMajor == self.oldBeaconMajor) {
@@ -96,7 +96,7 @@
         
             //NSLog(@"%d new",foundBeaconMajor);
             //NSLog(@"%d old",self.oldBeaconMajor);
-        
+            NSLog(@"RESET SCREEN");
             [_viewController dismissViewControllerAnimated:YES completion:^{
                 [self whichBeacon:self.oldBeaconMajor new:foundBeaconMajor];
             }];
@@ -135,8 +135,11 @@
     if (new == 1000) {
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-EMDM"];
         [self presentViewController:_viewController animated:YES completion:nil];
-        NSLog(@"segue to Beacon");
-        NSLog(@"%d old nested",old);
+    }
+    
+    if (new == 1001) {
+        _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-Li"];
+        [self presentViewController:_viewController animated:YES completion:nil];
     }
     
     // NSLog(@"%d old 2",old);
