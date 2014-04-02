@@ -106,10 +106,16 @@
 
 -(void)whichBeacon:(int)old new:(int)new {
     //NSLog(@"which Beacon");
-    
     //NSLog(@"%d old 1",old);
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIStoryboard *storyboard;
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] ==UIUserInterfaceIdiomPad) {
+        storyboard = [UIStoryboard storyboardWithName:@"Main-iPad" bundle:nil];
+    } else {
+        storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    }
+    
     [_viewController setModalPresentationStyle:UIModalPresentationFullScreen];
     
     if (new == 10) {//45893
@@ -126,7 +132,14 @@
         //NSLog(@"%d old nested",old);
     }
     
-    //NSLog(@"%d old 2",old);
+    if (new == 1000) {
+        _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-EMDM"];
+        [self presentViewController:_viewController animated:YES completion:nil];
+        NSLog(@"segue to Beacon");
+        NSLog(@"%d old nested",old);
+    }
+    
+    // NSLog(@"%d old 2",old);
 }
 
 - (void)didReceiveMemoryWarning
