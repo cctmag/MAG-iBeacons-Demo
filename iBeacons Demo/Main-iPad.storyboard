@@ -9,8 +9,8 @@
             <objects>
                 <viewController id="X8A-kA-Idm" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qFb-oY-ah1"/>
-                        <viewControllerLayoutGuide type="bottom" id="9L7-Eu-jyZ"/>
+                        <viewControllerLayoutGuide type="top" id="RT8-20-aDM"/>
+                        <viewControllerLayoutGuide type="bottom" id="TUH-m9-D6n"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="i9u-ga-mgb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
@@ -29,6 +29,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ct6-C7-BEd">
+                                <rect key="frame" x="437" y="766" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="to Li">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toLiVC:" destination="X8A-kA-Idm" eventType="touchUpInside" id="sX8-ze-HlR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -36,6 +46,7 @@
                     <connections>
                         <segue destination="Xvg-xn-0ce" kind="modal" identifier="toBeaconOne" id="0IY-5A-5J5"/>
                         <segue destination="V0A-c3-0Ta" kind="modal" identifier="toBeaconTwo" id="Ax7-VX-Jsa"/>
+                        <segue destination="Ibu-Yi-6YB" kind="modal" identifier="toLi" id="VPC-1m-sup"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prb-1p-hmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,8 +58,8 @@
             <objects>
                 <viewController storyboardIdentifier="BeaconTwoViewController" title="BeaconOneViewController" id="V0A-c3-0Ta" customClass="BeaconTwoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hoR-bT-ieO"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vqz-WJ-Wkh"/>
+                        <viewControllerLayoutGuide type="top" id="1aZ-0h-ayo"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Z7-jX-GeU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9um-9S-YGx">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
@@ -69,13 +80,31 @@
             </objects>
             <point key="canvasLocation" x="1560" y="316"/>
         </scene>
+        <!--Beacon HighlightVC Li-->
+        <scene sceneID="Jwb-t3-HdZ">
+            <objects>
+                <viewController storyboardIdentifier="BeaconHighlightVC-Li" id="Ibu-Yi-6YB" customClass="BeaconHighlightVC_Li" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Wj-3q-cNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="y0q-SI-4t5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tho-Nn-yeQ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXE-Us-Ao3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="1471"/>
+        </scene>
         <!--Beacon One View Controller-->
         <scene sceneID="Y1J-IN-vgO">
             <objects>
                 <viewController storyboardIdentifier="BeaconOneViewController" id="Xvg-xn-0ce" customClass="BeaconOneViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nKA-db-hhq"/>
-                        <viewControllerLayoutGuide type="bottom" id="PpS-g6-xMU"/>
+                        <viewControllerLayoutGuide type="top" id="EnW-xz-mbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="qaM-9t-4m6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jNs-UL-Blc">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
