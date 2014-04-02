@@ -116,7 +116,7 @@
         NSLog(@"%d old nested",old);
     }
     
-    if (new == 33127) {
+    if (new == 1000) {
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-EMDM"];
         [self presentViewController:_viewController animated:YES completion:nil];
         NSLog(@"segue to Beacon");
