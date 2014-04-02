@@ -144,6 +144,12 @@
         [self presentViewController:_viewController animated:YES completion:nil];
     }
     
+    if (new == 1002) {
+        NSLog(@"Segue to HummingMiss");
+        _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-HummingMiss"];
+        [self presentViewController:_viewController animated:YES completion:nil];
+    }
+    
     // NSLog(@"%d old 2",old);
 }
 

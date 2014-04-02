@@ -48,6 +48,7 @@
                         <segue destination="V0A-c3-0Ta" kind="modal" identifier="toBeaconTwo" id="Ax7-VX-Jsa"/>
                         <segue destination="Ibu-Yi-6YB" kind="modal" identifier="toLi" id="VPC-1m-sup"/>
                         <segue destination="HZn-xL-uwA" kind="modal" identifier="to-EMDM" id="zNi-bb-j5p"/>
+                        <segue destination="HQY-hh-hKj" kind="modal" id="4Hh-uq-RIU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="prb-1p-hmH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,6 +100,71 @@
             </objects>
             <point key="canvasLocation" x="1560" y="1471"/>
         </scene>
+        <!--Beacon HighlightVC Humming Miss-->
+        <scene sceneID="wrx-lg-t0m">
+            <objects>
+                <viewController storyboardIdentifier="BeaconHighlightVC-HummingMiss" id="HQY-hh-hKj" customClass="BeaconHighlightVC_HummingMiss" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kVp-Ey-C4W"/>
+                        <viewControllerLayoutGuide type="bottom" id="hta-mi-Sob"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ag1-LR-QkX">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bW-fc-LA7">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rnD-HQ-9EM">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-g0-4WN">
+                                                <rect key="frame" x="20" y="20" width="728" height="1012"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="917" id="egu-Hh-3Hj"/>
+                                                </constraints>
+                                            </webView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mn2-Yh-MFW">
+                                                <rect key="frame" x="56" y="945" width="420" height="140"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="9do-fI-f9N"/>
+                                                    <constraint firstAttribute="width" constant="420" id="fqa-AA-r40"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rnD-HQ-9EM" secondAttribute="trailing" id="56R-8s-km8"/>
+                                    <constraint firstAttribute="bottom" secondItem="rnD-HQ-9EM" secondAttribute="bottom" id="MjA-sT-uNW"/>
+                                    <constraint firstItem="rnD-HQ-9EM" firstAttribute="leading" secondItem="9bW-fc-LA7" secondAttribute="leading" id="RIM-1T-5hJ"/>
+                                    <constraint firstItem="rnD-HQ-9EM" firstAttribute="top" secondItem="9bW-fc-LA7" secondAttribute="top" id="UuE-GR-fMF"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9bW-fc-LA7" secondAttribute="trailing" id="hpA-iK-cdw"/>
+                            <constraint firstItem="9bW-fc-LA7" firstAttribute="leading" secondItem="ag1-LR-QkX" secondAttribute="leading" id="mw0-0g-GOy"/>
+                            <constraint firstItem="9bW-fc-LA7" firstAttribute="top" secondItem="ag1-LR-QkX" secondAttribute="top" id="o73-sW-qd3"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5b-8q-chY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1555" y="3703"/>
+        </scene>
         <!--Beacon HighlightVCEMDM-->
         <scene sceneID="G74-2V-h8P">
             <objects>
@@ -111,31 +177,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFf-Wx-asd">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFf-Wx-asd">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnY-3k-sHf">
-                                        <rect key="frame" x="20" y="509" width="364" height="177"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FFx-rR-Eaq">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">The EM|DM program trains inventive eyes and ears on developing new avenues for relating to sound and music.
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnY-3k-sHf">
+                                                <rect key="frame" x="20" y="509" width="364" height="177"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">The EM|DM program trains inventive eyes and ears on developing new avenues for relating to sound and music.
 The sonic arts push the boundaries of real-time computation and interaction, conceptual instruments and performance practice, and our understanding of human aural experience.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experimental Music | Digital Media" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiG-29-7DG">
-                                        <rect key="frame" x="124" y="446" width="521" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iq-mJ-Pta">
-                                        <rect key="frame" x="384" y="705" width="364" height="248"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <string key="text">Research
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Experimental Music | Digital Media" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiG-29-7DG">
+                                                <rect key="frame" x="124" y="446" width="521" height="55"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iq-mJ-Pta">
+                                                <rect key="frame" x="384" y="705" width="364" height="248"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <string key="text">Research
 Emergent Technology
 Mobile Music
 Instrument Design
@@ -147,30 +217,46 @@ Composition
 Notation
 Sonic Art
 Social Engagement</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-LOL.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="IlV-pc-t3Q">
-                                        <rect key="frame" x="384" y="509" width="364" height="177"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-Hemisphere.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="68l-Ep-ndF">
-                                        <rect key="frame" x="20" y="20" width="728" height="418"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-SocialStructure.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-Ck-B7Z">
-                                        <rect key="frame" x="20" y="705" width="364" height="248"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-Performance.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fVx-9f-M3t">
-                                        <rect key="frame" x="20" y="954" width="728" height="326"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-LOL.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="IlV-pc-t3Q">
+                                                <rect key="frame" x="384" y="509" width="364" height="177"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-Hemisphere.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="68l-Ep-ndF">
+                                                <rect key="frame" x="20" y="20" width="728" height="418"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-SocialStructure.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-Ck-B7Z">
+                                                <rect key="frame" x="20" y="705" width="364" height="248"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMDM-Performance.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fVx-9f-M3t">
+                                                <rect key="frame" x="20" y="954" width="728" height="326"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="FFx-rR-Eaq" firstAttribute="top" secondItem="EFf-Wx-asd" secondAttribute="top" id="If5-pb-JoP"/>
+                                    <constraint firstItem="FFx-rR-Eaq" firstAttribute="leading" secondItem="EFf-Wx-asd" secondAttribute="leading" id="ZC4-Gn-Nmi"/>
+                                    <constraint firstAttribute="trailing" secondItem="FFx-rR-Eaq" secondAttribute="trailing" id="jTL-v5-hfa"/>
+                                    <constraint firstAttribute="bottom" secondItem="FFx-rR-Eaq" secondAttribute="bottom" id="sMq-wM-H1s"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aFM-xl-tXI" firstAttribute="top" secondItem="EFf-Wx-asd" secondAttribute="bottom" id="99v-aG-Hny"/>
+                            <constraint firstAttribute="trailing" secondItem="EFf-Wx-asd" secondAttribute="trailing" id="R9K-qa-Acx"/>
+                            <constraint firstItem="EFf-Wx-asd" firstAttribute="leading" secondItem="GQx-x8-ox2" secondAttribute="leading" id="gFo-n7-dfd"/>
+                            <constraint firstItem="EFf-Wx-asd" firstAttribute="top" secondItem="GQx-x8-ox2" secondAttribute="top" id="ods-lo-ZaE"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hr-2G-ge2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

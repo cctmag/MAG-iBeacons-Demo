@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		370BC7E418ECA5D5006C3AF2 /* BeaconHighlightVC-HummingMiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 370BC7E318ECA5D5006C3AF2 /* BeaconHighlightVC-HummingMiss.m */; };
 		371AA62E18EC837600CF6E42 /* EMDM-Hemisphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 371AA62A18EC837600CF6E42 /* EMDM-Hemisphere.jpg */; };
 		371AA62F18EC837600CF6E42 /* EMDM-LOL.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 371AA62B18EC837600CF6E42 /* EMDM-LOL.JPG */; };
 		371AA63018EC837600CF6E42 /* EMDM-Performance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 371AA62C18EC837600CF6E42 /* EMDM-Performance.jpg */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		370BC7E218ECA5D5006C3AF2 /* BeaconHighlightVC-HummingMiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BeaconHighlightVC-HummingMiss.h"; sourceTree = "<group>"; };
+		370BC7E318ECA5D5006C3AF2 /* BeaconHighlightVC-HummingMiss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BeaconHighlightVC-HummingMiss.m"; sourceTree = "<group>"; };
 		371AA62A18EC837600CF6E42 /* EMDM-Hemisphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-Hemisphere.jpg"; sourceTree = "<group>"; };
 		371AA62B18EC837600CF6E42 /* EMDM-LOL.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-LOL.JPG"; sourceTree = "<group>"; };
 		371AA62C18EC837600CF6E42 /* EMDM-Performance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "EMDM-Performance.jpg"; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				63C6BF2318D3BF4B00827D37 /* BeaconTwoViewController.m */,
 				371AA63218EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.h */,
 				371AA63318EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.m */,
+				370BC7E218ECA5D5006C3AF2 /* BeaconHighlightVC-HummingMiss.h */,
+				370BC7E318ECA5D5006C3AF2 /* BeaconHighlightVC-HummingMiss.m */,
 				63F5C66E18DCE9C100AC00A9 /* BeaconHighlightVC-Li.h */,
 				63F5C66F18DCE9C100AC00A9 /* BeaconHighlightVC-Li.m */,
 				63F14A0D18E090F2005C9287 /* Classes */,
@@ -360,6 +365,7 @@
 				63F5C67018DCE9C100AC00A9 /* BeaconHighlightVC-Li.m in Sources */,
 				C9AF590C17F5678D00792F91 /* main.m in Sources */,
 				371AA63418EC8DFB00CF6E42 /* BeaconHighlightVC-EMDM.m in Sources */,
+				370BC7E418ECA5D5006C3AF2 /* BeaconHighlightVC-HummingMiss.m in Sources */,
 				63FBB9C718E0863E00AE3E5C /* ScaledImageView.m in Sources */,
 				63FBB9C418E0835C00AE3E5C /* ChochinTextView.m in Sources */,
 			);
