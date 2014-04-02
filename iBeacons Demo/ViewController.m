@@ -79,7 +79,7 @@
     
     int foundBeaconMajor = [beacon.major intValue];
     NSLog(@"%d new",foundBeaconMajor);
-    //NSLog(@"%d old",self.oldBeaconMajor);
+    NSLog(@"%d old",self.oldBeaconMajor);
     
     if (foundBeaconMajor == self.oldBeaconMajor) {
         
@@ -91,7 +91,7 @@
             self.oldBeaconMajor = foundBeaconMajor;
             [self whichBeacon:self.oldBeaconMajor new:foundBeaconMajor];
         } else {
-        
+            NSLog(@"Returning to Home Screen");
             self.oldBeaconMajor = foundBeaconMajor;
         
             //NSLog(@"%d new",foundBeaconMajor);
@@ -133,11 +133,13 @@
     }
     
     if (new == 1000) {
+        NSLog(@"Segue to EMDM");
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-EMDM"];
         [self presentViewController:_viewController animated:YES completion:nil];
     }
     
     if (new == 1001) {
+        NSLog(@"Segue to Li");
         _viewController = [storyboard instantiateViewControllerWithIdentifier:@"BeaconHighlightVC-Li"];
         [self presentViewController:_viewController animated:YES completion:nil];
     }

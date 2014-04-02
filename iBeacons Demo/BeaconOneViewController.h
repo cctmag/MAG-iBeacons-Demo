@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 LSU MAG. All rights reserved.
 //
 
-#import "ViewController.h"
+//#import "ViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface BeaconOneViewController : ViewController
+@interface BeaconOneViewController : UIViewController
 
 @end
